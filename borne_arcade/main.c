@@ -7,6 +7,7 @@ int main()
 {
     printf("Hello world!\n");
     //playPendu();
-    playMastermind();
+    //playMastermind();
+    playJustePrix();
     return 0;
 }
