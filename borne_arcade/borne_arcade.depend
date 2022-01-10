@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1641831005 source:e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\main.c
+	<stdio.h>
+	<stdlib.h>
+	"pendu.h"
+
+1641829242 e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\pendu.h
+
+1641831087 source:e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\pendu.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"pendu.h"
+
