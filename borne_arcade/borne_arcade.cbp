@@ -25,6 +25,14 @@
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="mastermind.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="mastermind.h" />
+		<Unit filename="pendu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="pendu.h" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
