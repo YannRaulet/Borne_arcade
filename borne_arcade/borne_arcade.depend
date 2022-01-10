@@ -1,8 +1,9 @@
 # depslib dependency file v1.0
-1641831005 source:e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\main.c
+1641832814 source:e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\main.c
 	<stdio.h>
 	<stdlib.h>
 	"pendu.h"
+	"mastermind.h"
 
 1641829242 e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\pendu.h
 
@@ -11,4 +12,12 @@
 	<stdlib.h>
 	<string.h>
 	"pendu.h"
+
+1641832779 source:e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\mastermind.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"mastermind.h"
+
+1641832723 e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\mastermind.h
 
