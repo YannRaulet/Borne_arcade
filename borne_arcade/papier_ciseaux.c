@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 #include "papier_ciseaux.h"
 
 
@@ -9,21 +10,19 @@ void score_final( int score_joueur, int score_robot)
     // On affiche le score
     printf("\nScore du robot : %d\nVotre score : %d\n\n", score_robot, score_joueur);
 
-        // On compare les resultats
+    // On compare les resultats
     if (score_joueur > score_robot)
     {
-    printf("Vous avez gagne la partie avec un score de %d contre un score de %d pour le robot\n\n",score_joueur,score_robot);
+        printf("Vous avez gagne la partie avec un score de %d contre un score de %d pour le robot\n\n",score_joueur,score_robot);
     }
     else if (score_joueur < score_robot)
     {
-    printf("Vous avez perdu la partie avec un score de %d contre un score de %d pour le robot\n\n",score_joueur,score_robot);
+        printf("Vous avez perdu la partie avec un score de %d contre un score de %d pour le robot\n\n",score_joueur,score_robot);
     }
     else
     {
-    printf("Vous terminez la partie sur une egalite\n\n");
+        printf("Vous terminez la partie sur une egalite\n\n");
     }
-
-    return 0;
 }
 
 void choix_robot(int choix_utilisateur,char* choix_robot)
@@ -41,8 +40,6 @@ void choix_robot(int choix_utilisateur,char* choix_robot)
         {
             *choix_robot = '3';
         }
-
-        return 0;
 }
 
 void choix_utilisateur(int choix_joueur, int* quit)
@@ -73,18 +70,16 @@ void choix_utilisateur(int choix_joueur, int* quit)
         {
             printf("Votre saisie n'est pas valable, veuillez reesayer avec 1, 2, 3 ou 0\n");     //message d'erreur si le mauvais caractère est rentré
         }
-
-        return 0;
 }
 
 void playPapierCiseaux()
 {
 
     // Les variables du projet
-    int jeu_ordinateur = 0, jeu_utilisateur = 0;
+    int jeu_ordinateur = 0;
     const int VALEUR_MIN = 1, VALEUR_MAX = 3;
     char choixDuJoueur;
-    char choixDuRobot;
+    char choixDuRobot = 0;
     int score = 0,quitter = 1, robot = 0; // On initialise le score et le nombre d'essai a 0.
 
     // Choix du nombre au hasard
@@ -101,7 +96,7 @@ void playPapierCiseaux()
         // Le jeu
         printf("Choissisez 1-Pierre, 2-Papier, 3-Ciseaux (saisissez 0 pour quitter) : ");
         fflush(stdin);
-        scanf("%c",&choixDuJoueur);//le joueur rentre son choix
+        scanf("%c", &choixDuJoueur);//le joueur rentre son choix
         fflush(stdin);
 
         choix_utilisateur(choixDuJoueur, &quitter);
@@ -160,5 +155,4 @@ void playPapierCiseaux()
     score_final(score, robot);
 
     // Fin du code
-    return 0;
 }
