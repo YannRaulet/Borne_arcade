@@ -127,7 +127,7 @@
 	<string.h>
 	"score.h"
 
-1641997959 source:/home/yann/Borne_arcade/borne_arcade/juste_prix.c
+1642001634 source:/home/yann/Borne_arcade/borne_arcade/juste_prix.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
@@ -136,7 +136,7 @@
 
 1641997959 /home/yann/Borne_arcade/borne_arcade/juste_prix.h
 
-1641999252 source:/home/yann/Borne_arcade/borne_arcade/main.c
+1642001175 source:/home/yann/Borne_arcade/borne_arcade/main.c
 	<stdio.h>
 	<stdlib.h>
 	"score.h"
@@ -145,7 +145,7 @@
 	"juste_prix.h"
 	"papier_ciseaux.h"
 
-1641993198 /home/yann/Borne_arcade/borne_arcade/score.h
+1642001175 /home/yann/Borne_arcade/borne_arcade/score.h
 
 1641993198 /home/yann/Borne_arcade/borne_arcade/pendu.h
 
@@ -153,21 +153,21 @@
 
 1641993198 /home/yann/Borne_arcade/borne_arcade/papier_ciseaux.h
 
-1641997959 source:/home/yann/Borne_arcade/borne_arcade/mastermind.c
+1642001175 source:/home/yann/Borne_arcade/borne_arcade/mastermind.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
 	"mastermind.h"
 	"score.h"
 
-1641999252 source:/home/yann/Borne_arcade/borne_arcade/papier_ciseaux.c
+1642001175 source:/home/yann/Borne_arcade/borne_arcade/papier_ciseaux.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
 	"papier_ciseaux.h"
 	"score.h"
 
-1641997959 source:/home/yann/Borne_arcade/borne_arcade/pendu.c
+1642001175 source:/home/yann/Borne_arcade/borne_arcade/pendu.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -180,7 +180,7 @@
 	<string.h>
 	"score.h"
 
-1641999252 source:/home/yann/Borne_arcade/borne_arcade/score.c
+1642001175 source:/home/yann/Borne_arcade/borne_arcade/score.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
