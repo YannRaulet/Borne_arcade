@@ -1,10 +1,11 @@
 # depslib dependency file v1.0
-1641981376 source:e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\main.c
+1641982547 source:e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\main.c
 	<stdio.h>
 	<stdlib.h>
 	"pendu.h"
 	"mastermind.h"
 	"juste_prix.h"
+	"papier_ciseaux.h"
 
 1641829242 e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\pendu.h
 
@@ -83,4 +84,14 @@
 	<stdlib.h>
 	<string.h>
 	"pendu.h"
+
+1641976411 e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\juste_prix.h
+
+1641982334 e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\papier_ciseaux.h
+
+1641982497 source:e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\papier_ciseaux.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"papier_ciseaux.h"
 

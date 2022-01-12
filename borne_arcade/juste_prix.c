@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 #include "juste_prix.h"
 
@@ -23,7 +24,6 @@ void playJustePrix()
     int nombre_utilisateur = 0;
     int compteur = 0;
     const int NOMBRE_MAX = 10;
-    char code [1];
 
     srand(time(NULL));
     int nombre_mystere = randomCode();
