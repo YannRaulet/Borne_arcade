@@ -61,6 +61,7 @@ void playJustePrix()
                 scanf("%s", hScore.nom);
                 fflush(stdin);
                 addHightScore(highScoresList, hScore);
+                saveHightScore(highScoresList);
             }
         } else //quand l'utilisateur a atteint le maximum de tentatives, arreter le programme
         {
