@@ -18,7 +18,7 @@ int randomCode()
 
 void playJustePrix()
 {
-   printf("TP7: Les Boucles\n");
+   printf("Juste Prix !\n");
 
     // declaration de nos variables
     int nombre_utilisateur = 0;
@@ -36,7 +36,7 @@ void playJustePrix()
         if(compteur < NOMBRE_MAX)
         {
             compteur = compteur +1;
-            printf("Entrez un nombre aléatoire \n");
+            printf("Entrez un nombre aleatoire \n");
             scanf("%d", &nombre_utilisateur);
 
             // Si nombre déclaré est supérieur au nombre mystere, afficher le nombre de tentative, puis "c'est moins"
