@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "pendu.h"
+#include "score.h"
 
 //Met a jour motCache afin d'afficher les nouvelles lettres trouvees
 void updateMot(const char mot[], const int lettresTrouvees[], char motCache[]) {
@@ -68,7 +69,7 @@ void processLetter(const char motATrouver[], char motCache[], int lettresTrouvee
 void playPendu()
 {
     char motATrouver[] = "CODEBLOCKS";
-    char motCache[TAILLE_MOT]; //La version du mot revelee a l'utilisateur en fonction des lettres trouvees
+    char motCache[TAILLE_MOT] = {'\0'}; //La version du mot revelee a l'utilisateur en fonction des lettres trouvees
     char entreeUser[100];
     int lettresTrouvees[TAILLE_MOT - 1] = {0}; //Permet de savoir les lettres qui ont ete trouvees (0 pour non trouvé, 1 pour trouvé)
     int nbVies = 10, gagne = 0;
@@ -95,6 +96,12 @@ void playPendu()
     }
     if(gagne) {
         printf("Bravo, vous avez trouve le mot\n");
+        hightScore hScore;
+        hScore.score = nbVies;
+        printf("Vous marquez %ld points !\nEntrez votre nom pour le high score : ", hScore.score);
+        scanf("%s", hScore.nom);
+        fflush(stdin);
+        addHightScore(highScoresList, hScore);
     }
     else {
         printf("Perdu ! Il ne vous reste plus de vies\n");

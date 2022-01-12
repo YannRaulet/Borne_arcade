@@ -10,13 +10,14 @@
 
 1641829242 e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\pendu.h
 
-1641831087 source:e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\pendu.c
+1641995658 source:e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\pendu.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"pendu.h"
+	"score.h"
 
-1641988476 source:e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\mastermind.c
+1641995420 source:e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\mastermind.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
