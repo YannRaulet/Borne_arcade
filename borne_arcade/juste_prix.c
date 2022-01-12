@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
 #include "juste_prix.h"
+#include "score.h"
 
 int randomCode()
 {
@@ -52,7 +52,15 @@ void playJustePrix()
             }
             else             // afficher un message si le nombre mystère est trouvé
             {
-                printf ("Bravo, vous avez trouve le nombre mystere %d en %d tentatives", nombre_mystere, compteur);
+                printf ("Bravo, vous avez trouve le nombre mystere %d en %d tentatives \n", nombre_mystere, compteur);
+                // Utilisation du score.h
+                hightScore hScore;
+                hScore.score = NOMBRE_MAX - compteur + 1;
+                printf ("Votre nombre de points %ld \n", hScore.score);
+                printf ("Entrez votre nom %s \n", hScore.nom);
+                scanf("%s", hScore.nom);
+                fflush(stdin);
+                addHightScore(highScoresList, hScore);
             }
         } else //quand l'utilisateur a atteint le maximum de tentatives, arreter le programme
         {
