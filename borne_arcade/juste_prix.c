@@ -18,13 +18,19 @@ int randomCode()
 
 void playJustePrix()
 {
-   printf("Juste Prix !\n");
+    hightScore highScoresList[TAILLE_LISTE];
+    FILE* pt_fichier = loadGameHighScores("datas/JustePrixHighScore.sav", highScoresList);
+    if(!pt_fichier) {
+        return;
+    }
+
+    printf("Juste Prix !\n");
 
     // declaration de nos variables
     int nombre_utilisateur = 0;
     int compteur = 0;
     const int NOMBRE_MAX = 10;
-    hightScore highScoresList[TAILLE_LISTE];
+    //hightScore highScoresList[TAILLE_LISTE];
 
     srand(time(NULL));
     int nombre_mystere = randomCode();
@@ -62,7 +68,7 @@ void playJustePrix()
                 scanf("%s", hScore.nom);
                 fflush(stdin);
                 addHightScore(highScoresList, hScore);
-                saveHightScore(highScoresList);
+                saveHightScore(pt_fichier, highScoresList);
             }
         } else //quand l'utilisateur a atteint le maximum de tentatives, arreter le programme
         {
@@ -71,4 +77,5 @@ void playJustePrix()
         }
     }
     while (nombre_utilisateur != nombre_mystere);
+    fclose(pt_fichier);
 }
