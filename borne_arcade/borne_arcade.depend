@@ -1,7 +1,8 @@
 # depslib dependency file v1.0
-1641982710 source:e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\main.c
+1641992554 source:e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\main.c
 	<stdio.h>
 	<stdlib.h>
+	"score.h"
 	"pendu.h"
 	"mastermind.h"
 	"juste_prix.h"
@@ -15,11 +16,12 @@
 	<string.h>
 	"pendu.h"
 
-1641832779 source:e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\mastermind.c
+1641988476 source:e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\mastermind.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
 	"mastermind.h"
+	"score.h"
 
 1641832723 e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\mastermind.h
 
@@ -96,7 +98,7 @@
 	<time.h>
 	"papier_ciseaux.h"
 
-1641982660 source:e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\juste_prix.c
+1641983031 source:e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\juste_prix.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
@@ -109,4 +111,12 @@
 	<stdlib.h>
 	<time.h>
 	"papier_ciseaux.h"
+
+1641992377 e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\score.h
+
+1641988490 source:e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\score.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"score.h"
 
