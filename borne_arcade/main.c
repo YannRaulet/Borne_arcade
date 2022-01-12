@@ -3,6 +3,7 @@
 #include "pendu.h"
 #include "mastermind.h"
 #include "juste_prix.h"
+#include "papier_ciseaux.h"
 
 void printMenu() {
     printf("\tBienvenue sur la borne d'arcade !\n\n");

@@ -23,7 +23,7 @@ void score_final( int score_joueur, int score_robot)
     printf("Vous terminez la partie sur une egalite\n\n");
     }
 
-        return 0;
+    return 0;
 }
 
 void choix_robot(int choix_utilisateur,char* choix_robot)
