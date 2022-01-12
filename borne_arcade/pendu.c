@@ -68,6 +68,7 @@ void processLetter(const char motATrouver[], char motCache[], int lettresTrouvee
 
 void playPendu()
 {
+    hightScore highScoresList[TAILLE_LISTE];
     char motATrouver[] = "CODEBLOCKS";
     char motCache[TAILLE_MOT] = {'\0'}; //La version du mot revelee a l'utilisateur en fonction des lettres trouvees
     char entreeUser[100];

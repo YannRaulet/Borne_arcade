@@ -27,6 +27,25 @@ int loadHightScore(FILE* pt_fichier, hightScore* scores)
     return RETURN_OK;
 }
 
+FILE* loadGameHighScores(const char * path, hightScore *hsList) {
+    // ouverture du fichier
+    FILE* pt_fichier = fopen(path, "r+");
+    if(pt_fichier == NULL)
+    {
+        printf("Impossible d'ouvrir le fichier %s\n", path);
+        return NULL;
+    }
+
+    //chargement du fichier
+    int resultat = loadHightScore(pt_fichier, hsList);
+    if(resultat == RETURN_KO)
+    {
+        printf("Impossible de lire le fichier %s\n", path);
+        return NULL;
+    }
+    return pt_fichier;
+}
+
 void afficherHightScore(hightScore* scores)
 {
     // affichage de l'entete du tableau
