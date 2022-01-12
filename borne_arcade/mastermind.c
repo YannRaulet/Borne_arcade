@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include "mastermind.h"
+#include "score.h"
 
 void generateRandomCode(char code[]) {
     const char couleursPossibles[5] = {'R', 'V', 'B', 'J', 'O'};
@@ -48,12 +49,11 @@ void checkCouleurs(const char code[], const char saisie[], int *nbBonnesCouleurs
 
 void playMastermind()
 {
-    printf("TP8 : Tableaux\n");
     srand(time(NULL));
 
     char code[4]; //Code a trouver
     char saisie[4] = {0}; //Saisie de l'utilisateur
-    const int MAX_TENTATIVES = 3;
+    const int MAX_TENTATIVES = 10;
     int tentatives = 0, nbBonnesCouleursBienPlacees = 0, nbBonnesCouleursMalPlacees = 0;
 
     //Génération du code aléatoire
@@ -83,7 +83,12 @@ void playMastermind()
 
     //Fin du jeu
     if(nbBonnesCouleursBienPlacees == 4) {
-        printf("C'est la bonne combinaison !\n");
+        hightScore hScore;
+        hScore.score = MAX_TENTATIVES - tentatives + 1;
+        printf("C'est la bonne combinaison ! Vous marquez %ld points\nEntrez votre nom pour le high score : ", hScore.score);
+        scanf("%s", hScore.nom);
+        fflush(stdin);
+        addHightScore(highScoresList, hScore);
     }
     else {
         printf("Nombre de tentatives depassees !\n");
