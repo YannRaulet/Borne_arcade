@@ -3,32 +3,62 @@
 
 #include "juste_prix.h"
 
+int randomCode()
+{
+    // declaration de nos variables
+    int nombre_mystere = 0;
+    const int VALEUR_MIN = 1, VALEUR_MAX = 100;
+
+    //  generation du code aleatoire
+    nombre_mystere = (rand() % (VALEUR_MAX - VALEUR_MIN + 1)) + VALEUR_MIN;
+    printf("Devinez quel est mon nombre mystere. Indice: c'est un nombre entre %d et %d \n", VALEUR_MIN, VALEUR_MAX);
+    return nombre_mystere;
+}
+
 void playJustePrix()
 {
-    // Déclaration des variables
-    char code_a_trouver[] = {'R', 'V', 'B', 'J'};
-    char saisie_utilisateur[4];
-    const int NOMBRE_CARACTERES = 4;
-    int nombre_bien_place=0;
+   printf("TP7: Les Boucles\n");
 
-    for (int nombre_de_tentatives=1; nombre_de_tentatives < 10; nombre_de_tentatives++)
+    // declaration de nos variables
+    int nombre_utilisateur = 0;
+    int compteur = 0;
+    const int NOMBRE_MAX = 10;
+    char code [1];
+
+    srand(time(NULL));
+    int nombre_mystere = randomCode();
+
+    do
     {
-        // Lecture de la saisie utilisateur
-        printf("Entrez la combinaison de 4 caractères sans espace \n");
-        printf("Vous avez le choix entre R, V, B, J et O \n");
-        fflush(stdin);
-
-        // comparaison du code à trouver et de la saisie utilisateur
-        for (int ligne=0; ligne < 3; ligne++)
+        /* Tant que le compteur est inférieur à 10,
+           afficher un message à l'utilisateur lui demandant d'entrer un nombre
+        */
+        if(compteur < NOMBRE_MAX)
         {
-            scanf("%c", &saisie_utilisateur[ligne]);
+            compteur = compteur +1;
+            printf("Entrez un nombre aléatoire \n");
+            scanf("%d", &nombre_utilisateur);
 
-            if (saisie_utilisateur[ligne] == code_a_trouver[ligne])
+            // Si nombre déclaré est supérieur au nombre mystere, afficher le nombre de tentative, puis "c'est moins"
+            if(nombre_utilisateur > nombre_mystere)
             {
-                nombre_bien_place++;
+                printf("tentative %d > %d \n", compteur, nombre_utilisateur);
+                printf("C'est moins ! \n");
             }
+            else if (nombre_utilisateur < nombre_mystere)             // Si nombre déclaré est inférieur au nombre mystere, afficher le nombre de tentative, puis "c'est plus"
+            {
+                printf("tentative %d > %d \n", compteur, nombre_utilisateur);
+                printf("C'est plus ! \n");
+            }
+            else             // afficher un message si le nombre mystère est trouvé
+            {
+                printf ("Bravo, vous avez trouve le nombre mystere %d en %d tentatives", nombre_mystere, compteur);
+            }
+        } else //quand l'utilisateur a atteint le maximum de tentatives, arreter le programme
+        {
+            printf("Vous avez atteint le nombre maximum de tentatives !!");
+            break;
         }
-        printf("Le nombre de piece bien placee est de %d \n", nombre_bien_place);
-        printf("Le nombre de tentatives est de %d \n", nombre_de_tentatives);
     }
+    while (nombre_utilisateur != nombre_mystere);
 }

@@ -22,7 +22,7 @@
 
 1641832723 e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\mastermind.h
 
-1641834810 source:/home/yann/Documents/formationCPlusPlus/Borne_arcade/borne_arcade/juste_prix.c
+1641981938 source:/home/yann/Documents/formationCPlusPlus/Borne_arcade/borne_arcade/juste_prix.c
 	<stdio.h>
 	<stdlib.h>
 	"juste_prix.h"
@@ -45,17 +45,17 @@
 
 1641833907 /home/yann/Documents/formationCPlusPlus/Borne_arcade/borne_arcade/pendu.h
 
-1641834303 source:/home/yann/Documents/formationCPlusPlus/Borne_arcade/borne_arcade/main.c
+1641979385 source:/home/yann/Documents/formationCPlusPlus/Borne_arcade/borne_arcade/main.c
 	<stdio.h>
 	<stdlib.h>
 	"pendu.h"
 	"mastermind.h"
+	"juste_prix.h"
 
 1641978649 source:d:\document\ajc poei c++\c\projet_final\borne_arcade\borne_arcade\juste_prix.c
 	<stdio.h>
 	<stdlib.h>
 	"juste_prix.h"
-
 
 1641978649 d:\document\ajc poei c++\c\projet_final\borne_arcade\borne_arcade\juste_prix.h
 
@@ -83,5 +83,4 @@
 	<stdlib.h>
 	<string.h>
 	"pendu.h"
-
 

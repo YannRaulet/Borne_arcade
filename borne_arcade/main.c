@@ -22,6 +22,7 @@ int main()
     //playPendu();
     //playMastermind();
     //playJustePrix();
+    playPapierCiseaux();
 
     int quit = 0, choice = 0;
 
