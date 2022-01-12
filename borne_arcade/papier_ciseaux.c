@@ -77,6 +77,7 @@ void playPapierCiseaux()
 {
 
     // Les variables du projet
+    hightScore highScoresList[TAILLE_LISTE];
     int jeu_ordinateur = 0;
     const int VALEUR_MIN = 1, VALEUR_MAX = 3;
     char choixDuJoueur;

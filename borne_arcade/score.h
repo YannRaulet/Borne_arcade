@@ -17,12 +17,12 @@ typedef struct HIGHT_SCORE
 
 // ----- PROTOS
 int loadHightScore(FILE* , hightScore*);
+FILE* loadGameHighScores(const char * path, hightScore *hsList);
 void afficherHightScore(hightScore*);
 
 int addHightScore(hightScore*, hightScore);
 int saveHightScore(FILE* , hightScore*);
 
-extern hightScore highScoresList[];
 
 
 #endif // SCORE_H_INCLUDED

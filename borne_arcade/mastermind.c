@@ -49,6 +49,11 @@ void checkCouleurs(const char code[], const char saisie[], int *nbBonnesCouleurs
 
 void playMastermind()
 {
+    hightScore highScoresList[TAILLE_LISTE];
+    FILE* pt_fichier = loadGameHighScores("datas/MastermindHighScore.sav", highScoresList);
+    if(!pt_fichier) {
+        return;
+    }
     srand(time(NULL));
 
     char code[4]; //Code a trouver
@@ -89,8 +94,10 @@ void playMastermind()
         scanf("%s", hScore.nom);
         fflush(stdin);
         addHightScore(highScoresList, hScore);
+        saveHightScore(pt_fichier, highScoresList);
     }
     else {
         printf("Nombre de tentatives depassees !\n");
     }
+    fclose(pt_fichier);
 }
