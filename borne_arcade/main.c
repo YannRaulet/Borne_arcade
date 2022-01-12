@@ -34,7 +34,7 @@ void getHighScores() {
             pt_fichier = loadGameHighScores("datas/PenduHighScore.sav", highScoresList);
             break;
         case 2:
-            pt_fichier = loadGameHighScores("datas/PenduHighScore.sav", highScoresList);
+            pt_fichier = loadGameHighScores("datas/JustePrixHighScore.sav", highScoresList);
             break;
         case 3:
             pt_fichier = loadGameHighScores("datas/MastermindHighScore.sav", highScoresList);
