@@ -45,12 +45,13 @@
 
 1641833907 /home/yann/Documents/formationCPlusPlus/Borne_arcade/borne_arcade/pendu.h
 
-1641979385 source:/home/yann/Documents/formationCPlusPlus/Borne_arcade/borne_arcade/main.c
+1641982555 source:/home/yann/Documents/formationCPlusPlus/Borne_arcade/borne_arcade/main.c
 	<stdio.h>
 	<stdlib.h>
 	"pendu.h"
 	"mastermind.h"
 	"juste_prix.h"
+	"papier_ciseaux.h"
 
 1641978649 source:d:\document\ajc poei c++\c\projet_final\borne_arcade\borne_arcade\juste_prix.c
 	<stdio.h>
@@ -83,4 +84,11 @@
 	<stdlib.h>
 	<string.h>
 	"pendu.h"
+
+1641982108 /home/yann/Documents/formationCPlusPlus/Borne_arcade/borne_arcade/papier_ciseaux.h
+
+1641982108 source:/home/yann/Documents/formationCPlusPlus/Borne_arcade/borne_arcade/papier_ciseaux.c
+	<stdio.h>
+	<stdlib.h>
+	"papier_ciseaux.h"
 
