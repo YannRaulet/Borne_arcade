@@ -1,9 +1,10 @@
 # depslib dependency file v1.0
-1641832814 source:e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\main.c
+1641981376 source:e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\main.c
 	<stdio.h>
 	<stdlib.h>
 	"pendu.h"
 	"mastermind.h"
+	"juste_prix.h"
 
 1641829242 e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\pendu.h
 
@@ -21,7 +22,7 @@
 
 1641832723 e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\mastermind.h
 
-1641981125 source:/home/yann/Documents/formationCPlusPlus/Borne_arcade/borne_arcade/juste_prix.c
+1641981938 source:/home/yann/Documents/formationCPlusPlus/Borne_arcade/borne_arcade/juste_prix.c
 	<stdio.h>
 	<stdlib.h>
 	"juste_prix.h"
