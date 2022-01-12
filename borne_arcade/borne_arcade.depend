@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1641992554 source:e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\main.c
+1642000221 source:e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\main.c
 	<stdio.h>
 	<stdlib.h>
 	"score.h"
@@ -10,14 +10,14 @@
 
 1641829242 e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\pendu.h
 
-1641995658 source:e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\pendu.c
+1642000446 source:e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\pendu.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"pendu.h"
 	"score.h"
 
-1641995420 source:e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\mastermind.c
+1642000375 source:e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\mastermind.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
@@ -95,7 +95,7 @@
 	"pendu.h"
 	"score.h"
 
-1641976411 e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\juste_prix.h
+1641999637 e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\juste_prix.h
 
 1641982108 /home/yann/Documents/formationCPlusPlus/Borne_arcade/borne_arcade/papier_ciseaux.h
 
@@ -105,36 +105,38 @@
 	<time.h>
 	"papier_ciseaux.h"
 
-1641983031 source:e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\juste_prix.c
+1642000458 source:e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\juste_prix.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
 	"juste_prix.h"
+	"score.h"
 
 1641982334 e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\papier_ciseaux.h
 
-1641982497 source:e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\papier_ciseaux.c
+1642000239 source:e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\papier_ciseaux.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
 	"papier_ciseaux.h"
+	"score.h"
 
-1641992377 e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\score.h
+1642000158 e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\score.h
 
-1641988490 source:e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\score.c
+1642000035 source:e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\score.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"score.h"
 
-1641997360 source:/home/yann/Borne_arcade/borne_arcade/juste_prix.c
+1641997959 source:/home/yann/Borne_arcade/borne_arcade/juste_prix.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
 	"juste_prix.h"
 	"score.h"
 
-1641996350 /home/yann/Borne_arcade/borne_arcade/juste_prix.h
+1641997959 /home/yann/Borne_arcade/borne_arcade/juste_prix.h
 
 1641994839 source:/home/yann/Borne_arcade/borne_arcade/main.c
 	<stdio.h>
@@ -153,11 +155,12 @@
 
 1641993198 /home/yann/Borne_arcade/borne_arcade/papier_ciseaux.h
 
-1641993198 source:/home/yann/Borne_arcade/borne_arcade/mastermind.c
+1641997959 source:/home/yann/Borne_arcade/borne_arcade/mastermind.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
 	"mastermind.h"
+	"score.h"
 
 1641993198 source:/home/yann/Borne_arcade/borne_arcade/papier_ciseaux.c
 	<stdio.h>
@@ -165,11 +168,12 @@
 	<time.h>
 	"papier_ciseaux.h"
 
-1641993198 source:/home/yann/Borne_arcade/borne_arcade/pendu.c
+1641997959 source:/home/yann/Borne_arcade/borne_arcade/pendu.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"pendu.h"
+	"score.h"
 
 1641998080 source:d:\document\ajc poei c++\c\projet_final\borne_arcade\borne_arcade\score.c
 	<stdio.h>

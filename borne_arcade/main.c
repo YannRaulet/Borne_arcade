@@ -6,8 +6,6 @@
 #include "juste_prix.h"
 #include "papier_ciseaux.h"
 
-hightScore highScoresList[TAILLE_LISTE];
-
 void printMenu() {
     printf("\tBienvenue sur la borne d'arcade !\n\n");
     printf("Voici la liste des jeux : \n");
@@ -15,8 +13,8 @@ void printMenu() {
     printf("2) Juste Prix\n");
     printf("3) Mastermind\n");
     printf("4) Pendu\n");
-    printf("5) Quitter\n");
-    printf("6) Score\n\n");
+    printf("5) Score\n\n");
+    printf("6) Quitter\n");
     printf("Choississez a quel jeu vous allez jouer (Entrez un nombre entre 1 et 5) : ");
 }
 
@@ -29,24 +27,6 @@ int main()
     //playMastermind();
     //playJustePrix();
     //playPapierCiseaux();
-
-    char* path = "datas/HighScore.sav";
-
-    // ouverture du fichier
-    FILE* pt_fichier = fopen(path, "r+");
-    if(pt_fichier == NULL)
-    {
-        printf("Impossible d'ouvrir le fichier %s\n", path);
-        return RETURN_KO;
-    }
-
-    //chargement du fichier
-    int resultat = loadHightScore(pt_fichier, highScoresList);
-    if(resultat == RETURN_KO)
-    {
-        printf("Impossible de lire le fichier %s\n", path);
-        return RETURN_KO;
-    }
 
 
     int quit = 0, choice = 0;
@@ -74,16 +54,16 @@ int main()
             printf("\n\n\n");
             break;
         case 5:
-            quit = 1;
+            //afficherHightScore(highScoresList);
+            printf("\n\n\n");
             break;
         case 6:
-            afficherHightScore(highScoresList);
+            quit = 1;
             break;
         default:
             printf("Vous devez entrer un nombre entre 1 et 5 !\n\n\n");
             break;
         }
-        saveHightScore(pt_fichier,highScoresList);
     }
 
     printf("Au revoir !");

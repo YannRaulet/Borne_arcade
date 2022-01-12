@@ -24,6 +24,7 @@ void playJustePrix()
     int nombre_utilisateur = 0;
     int compteur = 0;
     const int NOMBRE_MAX = 10;
+    hightScore highScoresList[TAILLE_LISTE];
 
     srand(time(NULL));
     int nombre_mystere = randomCode();
