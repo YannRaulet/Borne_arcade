@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include "papier_ciseaux.h"
+#include "score.h"
 
 
 
@@ -147,12 +148,22 @@ void playPapierCiseaux()
             }
         }
 
-        printf("%d", quitter);
-
     // Ici s'arrete la boucle du jeu
     }while(quitter == 1);
 
     score_final(score, robot);
+
+     if(quitter == 0) {
+        hightScore hScore;
+        hScore.score = score;
+        printf("Vous un score de %ld points\nEntrez votre nom pour le high score : ", hScore.score);
+        scanf("%s", hScore.nom);
+        fflush(stdin);
+        addHightScore(highScoresList, hScore);
+    }
+    else {
+        printf("Nombre de tentatives depassees !\n");
+    }
 
     // Fin du code
 }

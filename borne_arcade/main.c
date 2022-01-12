@@ -15,7 +15,8 @@ void printMenu() {
     printf("2) Juste Prix\n");
     printf("3) Mastermind\n");
     printf("4) Pendu\n");
-    printf("5) Quitter\n\n");
+    printf("5) Quitter\n");
+    printf("6) Score\n\n");
     printf("Choississez a quel jeu vous allez jouer (Entrez un nombre entre 1 et 5) : ");
 }
 
@@ -74,10 +75,14 @@ int main()
         case 5:
             quit = 1;
             break;
+        case 6:
+            afficherHightScore(highScoresList);
+            break;
         default:
             printf("Vous devez entrer un nombre entre 1 et 5 !\n\n\n");
             break;
         }
+        saveHightScore(pt_fichier,highScoresList);
     }
 
     printf("Au revoir !");
