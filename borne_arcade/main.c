@@ -32,7 +32,7 @@ int main()
         printf("\n\n\n");
         switch(choice) {
         case 1:
-            printf("Le pierre-feuille-ciseaux n'est pas encore implemente. Revenez plus tard\n");
+            playPapierCiseaux();
             printf("\n\n\n");
             break;
         case 2:
