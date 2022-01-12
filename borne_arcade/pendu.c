@@ -69,6 +69,11 @@ void processLetter(const char motATrouver[], char motCache[], int lettresTrouvee
 void playPendu()
 {
     hightScore highScoresList[TAILLE_LISTE];
+    FILE* pt_fichier = loadGameHighScores("datas/PenduHighScore.sav", highScoresList);
+    if(!pt_fichier) {
+        return;
+    }
+
     char motATrouver[] = "CODEBLOCKS";
     char motCache[TAILLE_MOT] = {'\0'}; //La version du mot revelee a l'utilisateur en fonction des lettres trouvees
     char entreeUser[100];
@@ -103,8 +108,10 @@ void playPendu()
         scanf("%s", hScore.nom);
         fflush(stdin);
         addHightScore(highScoresList, hScore);
+        saveHightScore(pt_fichier, highScoresList);
     }
     else {
         printf("Perdu ! Il ne vous reste plus de vies\n");
     }
+    fclose(pt_fichier);
 }
