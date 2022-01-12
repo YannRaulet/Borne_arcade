@@ -13,8 +13,8 @@ void printMenu() {
     printf("2) Juste Prix\n");
     printf("3) Mastermind\n");
     printf("4) Pendu\n");
-    printf("5) Score\n\n");
-    printf("6) Quitter\n");
+    printf("5) Score\n");
+    printf("6) Quitter\n\n");
     printf("Choississez a quel jeu vous allez jouer (Entrez un nombre entre 1 et 5) : ");
 }
 
