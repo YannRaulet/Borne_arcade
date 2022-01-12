@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1642001470 source:e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\main.c
+1642002135 source:e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\main.c
 	<stdio.h>
 	<stdlib.h>
 	"score.h"
@@ -10,7 +10,7 @@
 
 1641829242 e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\pendu.h
 
-1642001554 source:e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\pendu.c
+1642001677 source:e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\pendu.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
