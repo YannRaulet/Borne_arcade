@@ -33,6 +33,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="mastermind.h" />
+		<Unit filename="papier_ciseaux.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="papier_ciseaux.h" />
 		<Unit filename="pendu.c">
 			<Option compilerVar="CC" />
 		</Unit>

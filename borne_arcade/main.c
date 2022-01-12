@@ -2,12 +2,13 @@
 #include <stdlib.h>
 #include "pendu.h"
 #include "mastermind.h"
+#include "papier_ciseaux.h"
 
 int main()
 {
-    printf("Hello world!\n");
     //playPendu();
-    playMastermind();
+    //playMastermind();
     //playJustePrix();
+    playPapierCiseaux();
     return 0;
 }
