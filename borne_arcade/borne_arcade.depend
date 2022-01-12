@@ -51,3 +51,35 @@
 	"mastermind.h"
 	"juste_prix.h"
 
+1641978649 source:d:\document\ajc poei c++\c\projet_final\borne_arcade\borne_arcade\juste_prix.c
+	<stdio.h>
+	<stdlib.h>
+	"juste_prix.h"
+
+1641978649 d:\document\ajc poei c++\c\projet_final\borne_arcade\borne_arcade\juste_prix.h
+
+1641978896 source:d:\document\ajc poei c++\c\projet_final\borne_arcade\borne_arcade\main.c
+	<stdio.h>
+	<stdlib.h>
+	"pendu.h"
+	"mastermind.h"
+	"papier_ciseaux.h"
+
+1641978649 d:\document\ajc poei c++\c\projet_final\borne_arcade\borne_arcade\pendu.h
+
+1641978649 d:\document\ajc poei c++\c\projet_final\borne_arcade\borne_arcade\mastermind.h
+
+1641978896 d:\document\ajc poei c++\c\projet_final\borne_arcade\borne_arcade\papier_ciseaux.h
+
+1641978649 source:d:\document\ajc poei c++\c\projet_final\borne_arcade\borne_arcade\mastermind.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"mastermind.h"
+
+1641978649 source:d:\document\ajc poei c++\c\projet_final\borne_arcade\borne_arcade\pendu.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"pendu.h"
+
