@@ -75,9 +75,13 @@ void choix_utilisateur(int choix_joueur, int* quit)
 
 void playPapierCiseaux()
 {
-
-    // Les variables du projet
+    //Selection du fichier score
     hightScore highScoresList[TAILLE_LISTE];
+    FILE* pt_fichier = loadGameHighScores("datas/PapierCiseauxHighScore.sav", highScoresList);
+    if(!pt_fichier) {
+        return;
+    }
+    // Les variables du projet
     int jeu_ordinateur = 0;
     const int VALEUR_MIN = 1, VALEUR_MAX = 3;
     char choixDuJoueur;
@@ -161,10 +165,11 @@ void playPapierCiseaux()
         scanf("%s", hScore.nom);
         fflush(stdin);
         addHightScore(highScoresList, hScore);
+        saveHightScore(pt_fichier, highScoresList);
     }
     else {
         printf("Nombre de tentatives depassees !\n");
     }
-
+    fclose(pt_fichier);
     // Fin du code
 }

@@ -57,15 +57,16 @@
 	"juste_prix.h"
 	"papier_ciseaux.h"
 
-1641995946 source:d:\document\ajc poei c++\c\projet_final\borne_arcade\borne_arcade\juste_prix.c
+1642000989 source:d:\document\ajc poei c++\c\projet_final\borne_arcade\borne_arcade\juste_prix.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
 	"juste_prix.h"
+	"score.h"
 
-1641995946 d:\document\ajc poei c++\c\projet_final\borne_arcade\borne_arcade\juste_prix.h
+1641998074 d:\document\ajc poei c++\c\projet_final\borne_arcade\borne_arcade\juste_prix.h
 
-1641997154 source:d:\document\ajc poei c++\c\projet_final\borne_arcade\borne_arcade\main.c
+1642000989 source:d:\document\ajc poei c++\c\projet_final\borne_arcade\borne_arcade\main.c
 	<stdio.h>
 	<stdlib.h>
 	"score.h"
@@ -80,18 +81,19 @@
 
 1641995946 d:\document\ajc poei c++\c\projet_final\borne_arcade\borne_arcade\papier_ciseaux.h
 
-1641995946 source:d:\document\ajc poei c++\c\projet_final\borne_arcade\borne_arcade\mastermind.c
+1642000989 source:d:\document\ajc poei c++\c\projet_final\borne_arcade\borne_arcade\mastermind.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
 	"mastermind.h"
 	"score.h"
 
-1641995946 source:d:\document\ajc poei c++\c\projet_final\borne_arcade\borne_arcade\pendu.c
+1642000989 source:d:\document\ajc poei c++\c\projet_final\borne_arcade\borne_arcade\pendu.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"pendu.h"
+	"score.h"
 
 1641999637 e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\juste_prix.h
 
@@ -174,7 +176,7 @@
 	"pendu.h"
 	"score.h"
 
-1641996989 source:d:\document\ajc poei c++\c\projet_final\borne_arcade\borne_arcade\score.c
+1642000989 source:d:\document\ajc poei c++\c\projet_final\borne_arcade\borne_arcade\score.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -184,5 +186,11 @@
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
+
+1641998080 source:d:\document\ajc poei c++\c\projet_final\borne_arcade\borne_arcade\papier_ciseaux.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"papier_ciseaux.h"
 	"score.h"
 
