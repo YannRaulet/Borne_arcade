@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1641982547 source:e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\main.c
+1641982710 source:e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\main.c
 	<stdio.h>
 	<stdlib.h>
 	"pendu.h"
@@ -46,12 +46,13 @@
 
 1641833907 /home/yann/Documents/formationCPlusPlus/Borne_arcade/borne_arcade/pendu.h
 
-1641979385 source:/home/yann/Documents/formationCPlusPlus/Borne_arcade/borne_arcade/main.c
+1641982555 source:/home/yann/Documents/formationCPlusPlus/Borne_arcade/borne_arcade/main.c
 	<stdio.h>
 	<stdlib.h>
 	"pendu.h"
 	"mastermind.h"
 	"juste_prix.h"
+	"papier_ciseaux.h"
 
 1641978649 source:d:\document\ajc poei c++\c\projet_final\borne_arcade\borne_arcade\juste_prix.c
 	<stdio.h>
@@ -86,6 +87,20 @@
 	"pendu.h"
 
 1641976411 e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\juste_prix.h
+
+1641982108 /home/yann/Documents/formationCPlusPlus/Borne_arcade/borne_arcade/papier_ciseaux.h
+
+1641982108 source:/home/yann/Documents/formationCPlusPlus/Borne_arcade/borne_arcade/papier_ciseaux.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"papier_ciseaux.h"
+
+1641982660 source:e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\juste_prix.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"juste_prix.h"
 
 1641982334 e:\desktop\abylsen\formation\c\borne_arcade\borne_arcade\papier_ciseaux.h
 
