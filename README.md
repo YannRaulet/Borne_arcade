@@ -1,6 +1,6 @@
 # Borne_arcade
 
-<h2>"C / C++ Developer" training project</h2>
+<h2>"C / C++ Developer" training project </h2>
 
 ------------------------------------------------------------------------
 
